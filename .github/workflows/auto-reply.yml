@@ -10,5 +10,5 @@ jobs:
     steps:
     - name: Auto-reply to new issues
       uses: cj-mills/auto-reply-workflow@main
-       with:
-         issue-comment: "Thank you for your issue! Our team will review it and get back to you shortly."
+      with:
+        issue-comment: "Thank you for your issue! Our team will review it and get back to you shortly."
