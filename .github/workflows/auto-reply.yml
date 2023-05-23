@@ -1,4 +1,4 @@
-name: Auto Reply to Issues
+name: Auto-reply to new issues
 
 on:
   issues:
