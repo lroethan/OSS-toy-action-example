@@ -16,5 +16,5 @@ jobs:
       uses: peter-evans/auto-reply@v2
       with:
         issue-number: ${{ github.event.issue.number }}
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
         comment: "Thank you for opening this issue. We will look into it as soon as possible."
