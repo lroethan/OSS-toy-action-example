@@ -5,16 +5,10 @@ on:
     types: [opened]
 
 jobs:
-  auto-reply:
+  auto_reply:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Auto reply to issue
-      uses: actions-ecosystem/auto-reply@v1.2.0
-      with:
-        issue-number: ${{ github.event.issue.number }}
-        repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
-        comment: "Thank you for opening this issue. We will look into it as soon as possible."
+    - name: Auto-reply to new issues
+      uses: cj-mills/auto-reply-workflow@main
+       with:
+         issue-comment: "Thank you for your issue! Our team will review it and get back to you shortly."
